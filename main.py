@@ -61,9 +61,6 @@ def get_through(start, prev=[]):
     x = start[0]
     y = start[1]
 
-    for row in maze:
-        print(row)
-
     up = check_position(x, y - 1, start, prev)
     down = check_position(x, y + 1, start, prev)
     left = check_position(x - 1, y, start, prev)
